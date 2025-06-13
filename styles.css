@@ -1,0 +1,152 @@
+/* styles.css */
+
+/* Fonte personalizada */
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f0f5f1;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container centralizado */
+body > * {
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(to right, #4CAF50, #81C784);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.2em;
+    font-weight: 800;
+}
+
+/* Seções */
+section {
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #388E3C;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+/* Parágrafos */
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Imagens responsivas e arredondadas */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Galeria */
+.imagem-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imagem-galeria img {
+    width: 45%;
+    max-width: 300px;
+    object-fit: cover;
+}
+
+/* Lista de atividades */
+#atividades ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 0;
+}
+
+#atividades li {
+    background-color: #f4fdf4;
+    border: 1px solid #c8e6c9;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+#atividades li:hover {
+    transform: translateY(-5px);
+}
+
+#atividades li p {
+    margin-top: 10px;
+}
+
+/* Depoimentos */
+blockquote {
+    font-style: italic;
+    color: #2e7d32;
+    border-left: 5px solid #81C784;
+    padding-left: 15px;
+    margin: 20px 0;
+    background-color: #f9fff9;
+    border-radius: 5px;
+}
+
+/* Descrição adicional */
+.descricao-agricultura-urbana p {
+    margin-bottom: 12px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 20px;
+    font-size: 0.9em;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    #atividades ul {
+        grid-template-columns: 1fr;
+    }
+
+    .imagem-galeria img {
+        width: 100%;
+    }
+}
